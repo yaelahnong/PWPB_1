@@ -28,7 +28,7 @@
     <a class="p-2 text-dark" href="#">Tugas ketiga</a>
     <a class="p-2 text-dark" href="#">Tugas keempat</a>
   </nav>
-  <a class="btn btn-outline-primary" href="index.php">Home</a>
+  <a class="btn btn-outline-success" href="index.php">Home</a>
 </div>
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">

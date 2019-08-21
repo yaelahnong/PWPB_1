@@ -61,7 +61,14 @@
       .card{
         border-radius: 10px
       }
-
+      #btn-profile-2{
+          position: relative;
+          top: 48px;
+      }
+      #btn-profile-3{
+        position: relative;
+        top: 72px;
+      }
       
     </style>
     <!-- Custom styles for this template -->
@@ -76,7 +83,7 @@
     <a class="p-2 text-dark" href="#">Tugas ketiga</a>
     <a class="p-2 text-dark" href="#">Tugas keempat</a>
   </nav>
-  <a class="btn btn-outline-primary" href="index.php">Home</a>
+  <a class="btn btn-outline-success" href="index.php">Home</a>
 </div>
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
@@ -96,7 +103,7 @@
                 <span><?= $nama_satu ?></span> <p>berumur <?= $umur_satu ?> tahun, mempunyai hobi <?= $hobi_satu ?> ia bercita-cita menjadi spiderman waktu kecil, sekarang ia ingin menjadi orang sukses demi masa depan yang lebih baik<p>
               </div>
             </ul>
-            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Lebih lanjut</button>
+            <button type="button" class="btn btn-lg btn-block btn-success" id="btn-profile-1">Lebih lanjut</button>
           </div>
       </div>
     <!-- END PROFILE 1 -->
@@ -109,9 +116,10 @@
             <ul class="list-unstyled mt-3 mb-4">
               <div class="tentang_user">
                 <span>Mahyuni</span> <p>berumur <?= $umur_dua ?> tahun,ingin mempunyai sesuatu yang diinginkan ,dan juga bisa membanggakan orang tua .Dan ingin menjadi wanita berkarir</p>
+
               </div>
             </ul>
-            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Lebih lanjut</button>
+            <button type="button" class="btn btn-lg btn-block btn-success" id="btn-profile-2">Lebih lanjut</button>
           </div>
       </div>
     <!-- END PROFILE 2 -->
@@ -130,13 +138,13 @@
               </div>
               <!-- END OF TENTANG USER -->
             </ul>
-            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Lebih lanjut</button>
+            <button type="button" class="btn btn-lg btn-block btn-success" id="btn-profile-3">Lebih lanjut</button>
           </div>
       </div>
     <!-- END PROFILE 3 -->
   </div>
   <div class="pricing-header px-2 py-2 pt-md-2 pb-md-2 mx-auto text-center">
-    <p class="lead">Rata-rata tinggi kami = <?php echo $rata_rata ?></p>
+    <p class="lead">Rata-rata tinggi kami = <?php printf("%.1f", $rata_rata) ?></p>
   </div>
 
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
