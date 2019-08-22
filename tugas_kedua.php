@@ -16,6 +16,12 @@
 
   $rata_rata = ($tinggi_satu + $tinggi_dua + $tinggi_tiga) / 3;
 
+  const luas_kubus = "L = 6 x s²";
+  const volume_tetrahedron = "V = 1/3 x Lsegitiga x Tlimas";
+  const luas_kerucut = "L = πr (r + s)";
+  const luas_balok = "L = 2 (p x l + p x t +  l x t)";
+  const luas_prisma = "L = t × ( a1 + a2 + a3) + (2 × La)";
+  const volume_limas_segiempat = "V = ⅓ × L alas × t";
 ?>
 
 
@@ -36,43 +42,14 @@
     <link rel="stylesheet" type="text/css" href="css/Bootstrap.min.css">
 
     <!-- LOGO AS -->
-    <link rel="icon" href="img/logo.png">
-    <style>
-      .user{
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-
-      .tentang_user span{
-        font-weight: 600;
-        font-size: 24px;
-      }
-      .tentang_user p{
-        font-weight: 300;
-        font-size: 16px;
-        letter-spacing: 1.5px;
-      }
-      .card-body{
-        box-shadow: 2px 5px 10px rgba(0,0,0,0.1);
-        border-radius: 10px;
-      }
-      .card{
-        border-radius: 10px
-      }
-      #btn-profile-2{
-          position: relative;
-          top: 48px;
-      }
-      #btn-profile-3{
-        position: relative;
-        top: 72px;
-      }
-      
-    </style>
+    <link rel="icon" href="assets/img/logo.png">
     <!-- Custom styles for this template -->
     <link href="pricing.css" rel="stylesheet">
+    <style>
+      .bangun-ruang{
+        width: 200px;
+      }
+    </style>
   </head>
   <body>
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
@@ -87,62 +64,73 @@
 </div>
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <h1 class="display-4">Tugas pertama</h1>
-  <p class="lead">dibawah ini adalah anggota Kelompok 9</p>
+  <h1 class="display-4">Tugas kedua</h1>
+  <p class="lead">dibawah ini adalah kumpulan bangun ruang</p>
 </div>
 
 <div class="container">
-  <div class="card-deck mb-3 text-center">
-    <!-- PROFILE 1 -->
+    <div class="card-deck mb-3 text-center">
+    <!-- BARIS PERTAMA -->
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <img src="assets/img/kubus.gif" class="card-img-top">
+            <p class="card-text bg-light">Luas</p>
+            <p class="card-text bg-light"><?php echo luas_kubus; ?></p>
+          <button type="button" class="btn btn-lg btn-block btn-success">Lebih lanjut</button>
+        </div>
+      </div>
+
+      <div class="card mb-4 shadow-sm"> 
+        <div class="card-body">
+          <img src="assets/img/tetrahedron.gif" width="150px" class="card-img-top">
+          <p class="card-text bg-light">Volume</p>
+          <p class="card-text bg-light"><?php echo volume_tetrahedron; ?></p>
+          <button type="button" class="btn btn-lg btn-block btn-success">Lebih lanjut</button>
+        </div>
+      </div>
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <img src="assets/img/kerucut.gif" width="150px" class="card-img-top">
+          <p class="card-text bg-light">Luas</p>
+          <p class="card-text bg-light"><?php echo luas_kerucut; ?></p>
+          <button type="button" class="btn btn-lg btn-block btn-success">Lebih lanjut</button>
+        </div>
+      </div>
+    </div>
+    <!-- END OF BARIS PERTAMA -->
+
+    <!-- BARIS KEDUA -->
+    <div class="card-deck mb-3 text-center">
       <div class="card mb-4 shadow-sm">
           <div class="card-body">
-            <!-- GAMBAR LO -->
-            <img class="user" src="assets/img/profile1.jpg">
-            <ul class="list-unstyled mt-3 mb-4">
-              <div class="tentang_user">
-                <span><?= $nama_satu ?></span> <p>berumur <?= $umur_satu ?> tahun, mempunyai hobi <?= $hobi_satu ?> ia bercita-cita menjadi spiderman waktu kecil, sekarang ia ingin menjadi orang sukses demi masa depan yang lebih baik<p>
-              </div>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-success" id="btn-profile-1">Lebih lanjut</button>
+            <img src="assets/img/balok.gif" width="150px" class="card-img-top">
+            <p class="card-text bg-light">Luas</p>
+            <p class="card-text bg-light"><?php echo luas_balok; ?></p>
+            <button type="button" class="btn btn-lg btn-block btn-success">Lebih lanjut</button>
           </div>
       </div>
-    <!-- END PROFILE 1 -->
-
-    <!-- PROFILE 2 -->
       <div class="card mb-4 shadow-sm">
-          <div class="card-body">
+        <div class="card-body">
             <!-- GAMBAR LO -->
-            <img class="user" src="assets/img/yuni.jpg">
-            <ul class="list-unstyled mt-3 mb-4">
-              <div class="tentang_user">
-                <span>Mahyuni</span> <p>berumur <?= $umur_dua ?> tahun,ingin mempunyai sesuatu yang diinginkan ,dan juga bisa membanggakan orang tua .Dan ingin menjadi wanita berkarir</p>
-
-              </div>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-success" id="btn-profile-2">Lebih lanjut</button>
-          </div>
+          <img src="assets/img/prisma.gif" width="150px" class="card-img-top">     
+           <p class="card-text bg-light">Luas</p>
+           <p class="card-text bg-light"><?php echo luas_prisma?></p>
+          <button type="button" class="btn btn-lg btn-block btn-success">Lebih lanjut</button>
+        </div>
       </div>
-    <!-- END PROFILE 2 -->
-
-   <!-- PROFILE 3 -->
       <div class="card mb-4 shadow-sm">
-          <div class="card-body">
+        <div class="card-body">
             <!-- GAMBAR LO -->
-            <img class="user" src="assets/img/eca.jpg">
-            <ul class="list-unstyled mt-3 mb-4">
-              <!-- TENTANG USER -->
-              <div class="tentang_user">
-                <span>Salsabila Fauziah Khalda</span> <p>
-                berumur <?= $umur_tiga ?> tahun, ingin menjadi someone yang sukses, hobby <?= $hobi_tiga ?> kayanya 
-                </p>
-              </div>
-              <!-- END OF TENTANG USER -->
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-success" id="btn-profile-3">Lebih lanjut</button>
-          </div>
+          <img src="assets/img/limas_segiempat.gif" style="max-width: 100%" height="auto">
+            <p class="card-text bg-light">Luas</p>
+            <p class="card-text bg-light"><?php echo volume_limas_segiempat; ?></p>
+          <button type="button" class="btn btn-lg btn-block btn-success">Lebih lanjut</button>
+        </div>
       </div>
-    <!-- END PROFILE 3 -->
+    </div>
   </div>
+  <!-- END OF BARIS KEDUA -->
   <div class="pricing-header px-2 py-2 pt-md-2 pb-md-2 mx-auto text-center">
     <p class="lead">Rata-rata tinggi kami = <?php printf("%.1f", $rata_rata) ?></p>
   </div>
