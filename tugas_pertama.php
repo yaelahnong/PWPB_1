@@ -97,7 +97,7 @@
       <div class="card mb-4 shadow-sm">
           <div class="card-body">
             <!-- GAMBAR LO -->
-            <img class="user" src="assets/img/profile1.jpg">
+            <img class="user" src="img/profile1.jpg">
             <ul class="list-unstyled mt-3 mb-4">
               <div class="tentang_user">
                 <span><?= $nama_satu ?></span> <p>berumur <?= $umur_satu ?> tahun, mempunyai hobi <?= $hobi_satu ?> ia bercita-cita menjadi spiderman waktu kecil, sekarang ia ingin menjadi orang sukses demi masa depan yang lebih baik<p>
@@ -112,7 +112,7 @@
       <div class="card mb-4 shadow-sm">
           <div class="card-body">
             <!-- GAMBAR LO -->
-            <img class="user" src="assets/img/yuni.jpg">
+            <img class="user" src="img/yuni.jpg">
             <ul class="list-unstyled mt-3 mb-4">
               <div class="tentang_user">
                 <span>Mahyuni</span> <p>berumur <?= $umur_dua ?> tahun,ingin mempunyai sesuatu yang diinginkan ,dan juga bisa membanggakan orang tua .Dan ingin menjadi wanita berkarir</p>
@@ -128,7 +128,7 @@
       <div class="card mb-4 shadow-sm">
           <div class="card-body">
             <!-- GAMBAR LO -->
-            <img class="user" src="assets/img/eca.jpg">
+            <img class="user" src="img/eca.jpg">
             <ul class="list-unstyled mt-3 mb-4">
               <!-- TENTANG USER -->
               <div class="tentang_user">

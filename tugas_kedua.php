@@ -22,6 +22,7 @@
   const luas_balok = "L = 2 (p x l + p x t +  l x t)";
   const luas_prisma = "L = t × ( a1 + a2 + a3) + (2 × La)";
   const volume_limas_segiempat = "V = ⅓ × L alas × t";
+
 ?>
 
 
@@ -42,13 +43,11 @@
     <link rel="stylesheet" type="text/css" href="css/Bootstrap.min.css">
 
     <!-- LOGO AS -->
-    <link rel="icon" href="assets/img/logo.png">
+    <link rel="icon" href="img/logo.png">
     <!-- Custom styles for this template -->
     <link href="pricing.css" rel="stylesheet">
     <style>
-      .bangun-ruang{
-        width: 200px;
-      }
+      /*CSS INTERNAL*/
     </style>
   </head>
   <body>
@@ -68,12 +67,12 @@
   <p class="lead">dibawah ini adalah kumpulan bangun ruang</p>
 </div>
 
-<div class="container">
+  <div class="container">
     <div class="card-deck mb-3 text-center">
     <!-- BARIS PERTAMA -->
       <div class="card mb-4 shadow-sm">
         <div class="card-body">
-          <img src="assets/img/kubus.gif" class="card-img-top">
+          <img src="img/kubus.gif" width="150px" class="card-img-top">
             <p class="card-text bg-light">Luas</p>
             <p class="card-text bg-light"><?php echo luas_kubus; ?></p>
           <button type="button" class="btn btn-lg btn-block btn-success">Lebih lanjut</button>
@@ -82,7 +81,7 @@
 
       <div class="card mb-4 shadow-sm"> 
         <div class="card-body">
-          <img src="assets/img/tetrahedron.gif" width="150px" class="card-img-top">
+          <img src="img/tetrahedron.gif" width="150px" class="card-img-top">
           <p class="card-text bg-light">Volume</p>
           <p class="card-text bg-light"><?php echo volume_tetrahedron; ?></p>
           <button type="button" class="btn btn-lg btn-block btn-success">Lebih lanjut</button>
@@ -91,7 +90,7 @@
 
       <div class="card mb-4 shadow-sm">
         <div class="card-body">
-          <img src="assets/img/kerucut.gif" width="150px" class="card-img-top">
+          <img src="img/kerucut.gif" width="150px" class="card-img-top">
           <p class="card-text bg-light">Luas</p>
           <p class="card-text bg-light"><?php echo luas_kerucut; ?></p>
           <button type="button" class="btn btn-lg btn-block btn-success">Lebih lanjut</button>
@@ -104,7 +103,7 @@
     <div class="card-deck mb-3 text-center">
       <div class="card mb-4 shadow-sm">
           <div class="card-body">
-            <img src="assets/img/balok.gif" width="150px" class="card-img-top">
+            <img src="img/balok.gif" width="150px" class="card-img-top">
             <p class="card-text bg-light">Luas</p>
             <p class="card-text bg-light"><?php echo luas_balok; ?></p>
             <button type="button" class="btn btn-lg btn-block btn-success">Lebih lanjut</button>
@@ -113,7 +112,7 @@
       <div class="card mb-4 shadow-sm">
         <div class="card-body">
             <!-- GAMBAR LO -->
-          <img src="assets/img/prisma.gif" width="150px" class="card-img-top">     
+          <img src="img/prisma.gif" width="150px" class="card-img-top">     
            <p class="card-text bg-light">Luas</p>
            <p class="card-text bg-light"><?php echo luas_prisma?></p>
           <button type="button" class="btn btn-lg btn-block btn-success">Lebih lanjut</button>
@@ -122,24 +121,23 @@
       <div class="card mb-4 shadow-sm">
         <div class="card-body">
             <!-- GAMBAR LO -->
-          <img src="assets/img/limas_segiempat.gif" style="max-width: 100%" height="auto">
+          <img src="img/limas_segiempat.gif" width="150px" class="card-img-top">
             <p class="card-text bg-light">Luas</p>
-            <p class="card-text bg-light"><?php echo volume_limas_segiempat; ?></p>
+            <p class="card-text bg-light"><?php echo luas_kubus; ?></p>
           <button type="button" class="btn btn-lg btn-block btn-success">Lebih lanjut</button>
         </div>
       </div>
     </div>
   </div>
   <!-- END OF BARIS KEDUA -->
-  <div class="pricing-header px-2 py-2 pt-md-2 pb-md-2 mx-auto text-center">
-    <p class="lead">Rata-rata tinggi kami = <?php printf("%.1f", $rata_rata) ?></p>
-  </div>
-
+ 
+  <div class="container">
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
       <div class="col-12 col-md">
-        <small class="d-block mb-3 text-muted">&copy; 2017-2019</small>
-        <p class="lead">#PWPB_1</p>
+        <img class="mb-2" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+        <small class="d-block mb-3 text-muted">&copy; 2019</small>
+        <p class="lead">#PWPB_XIRPL3</p>
       </div>
       <div class="col-6 col-md">
         <h5>Features</h5>
