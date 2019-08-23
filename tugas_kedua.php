@@ -1,20 +1,11 @@
 <?php 
-  $nama_satu = "Marino imola";
-  $umur_satu = 15;
-  $hobi_satu = "main musik, main game";
-  $tinggi_satu = 170;
-  
-  $nama_dua = "Mahyuni";
-  $umur_dua = 15;
-  $hobi_dua = "berenang,masak";
-  $tinggi_dua = 160;
 
-  $nama_tiga = "Salsabila Fauziah Khalda";
-  $umur_tiga = 16;
-  $hobi_tiga = "makan";
-  $tinggi_tiga = 160;
-
-  $rata_rata = ($tinggi_satu + $tinggi_dua + $tinggi_tiga) / 3;
+  $kubus = "<img src='img/kubus.gif' class='card-img-top'>";
+  $tetrahedron = "<img src='img/tetrahedron.gif' width='150px' class='card-img-top'>";
+  $kerucut = "<img src='img/kerucut.gif' width='150px' class='card-img-top'>";
+  $balok = "<img src='img/balok.gif' width='150px' class='card-img-top'>";
+  $prisma = "<img src='img/prisma.gif' width='150px' class='card-img-top'>";
+  $limas_segiempat = "<img src='img/limas_segiempat.gif' width='150px' class='card-img-top'>";
 
   const luas_kubus = "L = 6 x s²";
   const volume_tetrahedron = "V = 1/3 x Lsegitiga x Tlimas";
@@ -72,7 +63,9 @@
     <!-- BARIS PERTAMA -->
       <div class="card mb-4 shadow-sm">
         <div class="card-body">
-          <img src="img/kubus.gif" width="150px" class="card-img-top">
+          <!-- <img src="img/kubus.gif" width="150px" class="card-img-top"> -->
+            <?php echo $kubus ; ?>
+        
             <p class="card-text bg-light">Luas</p>
             <p class="card-text bg-light"><?php echo luas_kubus; ?></p>
           <button type="button" class="btn btn-lg btn-block btn-success">Lebih lanjut</button>
@@ -81,7 +74,8 @@
 
       <div class="card mb-4 shadow-sm"> 
         <div class="card-body">
-          <img src="img/tetrahedron.gif" width="150px" class="card-img-top">
+          <!-- <img src="img/tetrahedron.gif" width="150px" class="card-img-top"> -->
+          <?php echo $tetrahedron; ?>
           <p class="card-text bg-light">Volume</p>
           <p class="card-text bg-light"><?php echo volume_tetrahedron; ?></p>
           <button type="button" class="btn btn-lg btn-block btn-success">Lebih lanjut</button>
@@ -90,7 +84,8 @@
 
       <div class="card mb-4 shadow-sm">
         <div class="card-body">
-          <img src="img/kerucut.gif" width="150px" class="card-img-top">
+          <!-- <img src="img/kerucut.gif" width="150px" class="card-img-top"> -->
+          <?php echo $kerucut; ?>
           <p class="card-text bg-light">Luas</p>
           <p class="card-text bg-light"><?php echo luas_kerucut; ?></p>
           <button type="button" class="btn btn-lg btn-block btn-success">Lebih lanjut</button>
@@ -103,7 +98,8 @@
     <div class="card-deck mb-3 text-center">
       <div class="card mb-4 shadow-sm">
           <div class="card-body">
-            <img src="img/balok.gif" width="150px" class="card-img-top">
+            <!-- <img src="img/balok.gif" width="150px" class="card-img-top"> -->
+            <?php echo $balok; ?>
             <p class="card-text bg-light">Luas</p>
             <p class="card-text bg-light"><?php echo luas_balok; ?></p>
             <button type="button" class="btn btn-lg btn-block btn-success">Lebih lanjut</button>
@@ -112,7 +108,8 @@
       <div class="card mb-4 shadow-sm">
         <div class="card-body">
             <!-- GAMBAR LO -->
-          <img src="img/prisma.gif" width="150px" class="card-img-top">     
+          <!-- <img src="img/prisma.gif" width="150px" class="card-img-top"> -->
+          <?php echo $prisma; ?>
            <p class="card-text bg-light">Luas</p>
            <p class="card-text bg-light"><?php echo luas_prisma?></p>
           <button type="button" class="btn btn-lg btn-block btn-success">Lebih lanjut</button>
@@ -121,9 +118,10 @@
       <div class="card mb-4 shadow-sm">
         <div class="card-body">
             <!-- GAMBAR LO -->
-          <img src="img/limas_segiempat.gif" width="150px" class="card-img-top">
+          <!-- <img src="img/limas_segiempat.gif" width="150px" class="card-img-top"> -->
+          <?php echo $limas_segiempat; ?>
             <p class="card-text bg-light">Luas</p>
-            <p class="card-text bg-light"><?php echo luas_kubus; ?></p>
+            <p class="card-text bg-light"><?php echo volume_limas_segiempat; ?></p>
           <button type="button" class="btn btn-lg btn-block btn-success">Lebih lanjut</button>
         </div>
       </div>
