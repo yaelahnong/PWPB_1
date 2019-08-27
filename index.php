@@ -34,6 +34,7 @@
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
   <h1 class="display-4">PWPB</h1>
   <p class="lead">Tempat mengumpulkan Tugas PWPB</p>
+  <img class="m-l-10px" src="img/pcguy.png" width="200px">
 </div>
 
 <div class="container">
