@@ -30,8 +30,6 @@
     <meta name="generator" content="Jekyll v3.8.5">
     <title>Tugas PWPB</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/pricing/">
-
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" type="text/css" href="css/Bootstrap.min.css">
 

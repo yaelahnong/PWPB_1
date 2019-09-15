@@ -17,7 +17,6 @@
 
     </style>
     <!-- Custom styles for this template -->
-    <link href="pricing.css" rel="stylesheet">
   </head>
   <body>
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
@@ -25,7 +24,7 @@
   <nav class="my-2 my-md-0 mr-md-3">
     <a class="p-2 text-dark" href="tugas_pertama.php">Tugas pertama</a>
     <a class="p-2 text-dark" href="tugas_kedua.php">Tugas kedua</a>
-    <a class="p-2 text-dark" href="#">Tugas ketiga</a>
+    <a class="p-2 text-dark" href="tugas_ketiga.php">Tugas ketiga</a>
     <a class="p-2 text-dark" href="#">Tugas keempat</a>
   </nav>
   <a class="btn btn-outline-success" href="index.php">Home</a>
@@ -41,7 +40,6 @@
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
       <div class="col-12 col-md">
-        <img class="mb-2" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
         <small class="d-block mb-3 text-muted">&copy; 2019</small>
         <p class="lead">#PWPB_XIRPL3</p>
       </div>

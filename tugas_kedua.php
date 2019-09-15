@@ -28,7 +28,6 @@
     <meta name="generator" content="Jekyll v3.8.5">
     <title>Tugas PWPB</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/pricing/">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" type="text/css" href="css/Bootstrap.min.css">
@@ -36,7 +35,6 @@
     <!-- LOGO AS -->
     <link rel="icon" href="img/logo.png">
     <!-- Custom styles for this template -->
-    <link href="pricing.css" rel="stylesheet">
     <style>
       /*CSS INTERNAL*/
     </style>
@@ -47,7 +45,7 @@
   <nav class="my-2 my-md-0 mr-md-3">
     <a class="p-2 text-dark" href="tugas_pertama.php">Tugas pertama</a>
     <a class="p-2 text-dark" href="tugas_kedua.php">Tugas kedua</a>
-    <a class="p-2 text-dark" href="#">Tugas ketiga</a>
+    <a class="p-2 text-dark" href="tugas_ketiga.php">Tugas ketiga</a>
     <a class="p-2 text-dark" href="#">Tugas keempat</a>
   </nav>
   <a class="btn btn-outline-success" href="index.php">Home</a>
@@ -128,12 +126,11 @@
     </div>
   </div>
   <!-- END OF BARIS KEDUA -->
- 
+
   <div class="container">
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
       <div class="col-12 col-md">
-        <img class="mb-2" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
         <small class="d-block mb-3 text-muted">&copy; 2019</small>
         <p class="lead">#PWPB_XIRPL3</p>
       </div>
