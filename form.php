@@ -44,7 +44,7 @@
                 <blockquote class="blockquote">
                     <!-- PROSES PHP -->
                     Nama Kamu : <b><?php echo $_POST['nm']; ?></b><br>
-                    Nama Panggilan :<?php echo $_POST['np']; ?><br>
+                    Nama Panggilan : <b><?php echo $_POST['np']; ?></b><br>
                     <?php if(isset($_POST['radio'])): ?>
                         Anda adalah seorang :<b><?php echo $_POST['radio']; ?></b><br>
                     <?php endif; ?>
@@ -55,7 +55,7 @@
                     Nomor SKHU : <b><?php echo $_POST['skhu'];?></b><br>
                     Tanggal diterima disekolah ini : <b><?php echo $_POST['tds'];?></b><br>
                     <?php if(!empty($_POST['als'])):?>
-                        Alasan pindah ke sekolah ini : <b><?php echo $_POST['als'];?></b>
+                        Alasan pindah ke sekolah ini : <b><?php echo $_POST['als'];?></b><br>
                     <?php endif; ?>
                     Agama : <b><?php echo $_POST['agm'];?></b><br>
                     Alamat : <b><?php echo $_POST['almt'];?></b><br>

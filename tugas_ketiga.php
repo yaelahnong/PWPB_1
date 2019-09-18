@@ -230,7 +230,7 @@
                         <td><input type="text" name="pk-a"></td>
                     </tr>
                     <tr>
-                        <td>Data Ibu Kandung :</td>
+                        <b><td>Data Ibu Kandung :</td></b>
                     </tr>
                     <tr>
                         <td>Nama</td>
