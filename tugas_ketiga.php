@@ -41,7 +41,7 @@
             <a class="p-2 text-dark" href="tugas_pertama.php">Tugas pertama</a>
             <a class="p-2 text-dark" href="tugas_kedua.php">Tugas kedua</a>
             <a class="p-2 text-dark" href="tugas_ketiga.php">Tugas ketiga</a>
-            <a class="p-2 text-dark" href="#">Tugas keempat</a>
+            <a class="p-2 text-dark" href="tugas_keempat.php">Tugas keempat</a>
         </nav>
         <a class="btn btn-outline-success" href="index.php">Home</a>
     </div>
@@ -145,8 +145,24 @@
                                 <option name="Thn">2010</option>
                                 <option name="Thn">2009</option>
                                 <option name="Thn">2008</option>
+                                <option name="Thn">2007</option>
+                                <option name="Thn">2006</option>
+                                <option name="Thn">2005</option>
+                                <option name="Thn">2004</option>
+                                <option name="Thn">2003</option>
+                                <option name="Thn">2002</option>
+                                <option name="Thn">2001</option>
+                                <option name="Thn">2000</option>
+                                <option name="Thn">1999</option>
+                                <option name="Thn">1998</option>
+                                <option name="Thn">1997</option>
+                                <option name="Thn">1996</option>
+                                <option name="Thn">1995</option>
+                                <option name="Thn">1994</option>
                                 <option name="Thn">1993</option>
                                 <option name="Thn">1992</option>
+                                <option name="Thn">1991</option>
+                                <option name="Thn">1990</option>
                             </select>
                         </td>
                     </tr>

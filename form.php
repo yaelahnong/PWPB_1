@@ -29,7 +29,7 @@
         <a class="p-2 text-dark" href="tugas_pertama.php">Tugas pertama</a>
         <a class="p-2 text-dark" href="tugas_kedua.php">Tugas kedua</a>
         <a class="p-2 text-dark" href="tugas_ketiga.php">Tugas ketiga</a>
-        <a class="p-2 text-dark" href="#">Tugas keempat</a>
+        <a class="p-2 text-dark" href="tugas_keempat.php">Tugas keempat</a>
     </nav>
     <a class="btn btn-outline-success" href="index.php">Home</a>
     </div>

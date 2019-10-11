@@ -14,7 +14,14 @@
 
 
     <style>
-
+		.content{
+			margin : 0 auto;
+			width : 760px;
+			margin-top : 120px;
+		}
+		#tambah-siswa{
+			margin : 20px;
+		}
     </style>
     <!-- Custom styles for this template -->
   </head>
@@ -30,11 +37,51 @@
   <a class="btn btn-outline-success" href="index.php">Home</a>
 </div>
 
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <h1 class="display-4">PWPB</h1>
-  <p class="lead">Tempat mengumpulkan Tugas PWPB</p>
-  <img class="m-l-10px" src="img/pcguy.png" width="200px">
+<!-- AWAL CONTENT -->
+<div class="container text-center">
+<?php
+	require 'functions.php';
+	
+	$siswa = query("SELECT * FROM data_siswa");
+?>
+
+	<section class="content">
+		<h1 class="mb-4">Data Siswa</h1>
+			<table border="1" cellpadding="10" cellspacing="0">
+				<tr>
+					<th>No.</th>
+					<th>NIS</th>
+					<th>Nama</th>
+					<th>Jenis Kelamin</th>
+					<th>Kelas</th>
+					<th>Alamat</th>
+					<th>Action
+					</th>
+				</tr>
+		
+		<?php $i = 1;?>
+		<?php foreach($siswa as $row) :?>
+				<tr>
+					<td><?= $i; ?></td>
+					<td><?= $row["NIS"]; ?></td>
+					<td><?= $row["nama"]; ?></td>
+					<td><?= $row["jenis_kelamin"]; ?></td>
+					<td><?= $row["kelas"]; ?></td>
+					<td><?= $row["alamat"]; ?></td>
+					<td>
+						<a class="btn btn-warning" href="ubah.php?id=<?= $row['id_siswa']; ?>">Ubah</a>
+						<a class="btn btn-danger" href="hapus.php?id=<?= $row['id_siswa']; ?>">Hapus</a>
+					</td>
+				</tr>
+		<?php $i++; ?> 
+		<?php endforeach; ?>
+			</table>
+		<a href="tambah.php" class="btn btn-dark" id="tambah-siswa">Tambah Siswa</a>
+	</section>
+			
 </div>
+<!-- AKHIR CONTENT -->
+
 
 <div class="container">
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
