@@ -31,6 +31,9 @@
 		<title>Tambah Data Siswa</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<style>
+			label{
+				display : block;
+			}
 		</style>
 	</head>
 	<body>

@@ -15,13 +15,19 @@
 
     <style>
 		.content{
-			margin : 0 auto;
-			width : 760px;
-			margin-top : 120px;
+			width : 100%;
 		}
-		#tambah-siswa{
-			margin : 20px;
+		
+		.content h1{
+			position : relative;
+			left : -299px; 
 		}
+		
+		.content table{
+			position : relative;
+			left : 160px;
+		}
+		
     </style>
     <!-- Custom styles for this template -->
   </head>
@@ -45,18 +51,17 @@
 	$siswa = query("SELECT * FROM data_siswa");
 ?>
 
-	<section class="content">
-		<h1 class="mb-4">Data Siswa</h1>
-			<table border="1" cellpadding="10" cellspacing="0">
-				<tr>
+	<section class="content mt-5">
+		<h1 class="display-5 mb-3">Data Siswa</h1>
+			<table cellpadding="20">
+				<tr class="bg-dark text-light">
 					<th>No.</th>
 					<th>NIS</th>
 					<th>Nama</th>
 					<th>Jenis Kelamin</th>
 					<th>Kelas</th>
 					<th>Alamat</th>
-					<th>Action
-					</th>
+					<th colspan="2">Action</th>
 				</tr>
 		
 		<?php $i = 1;?>
@@ -76,7 +81,7 @@
 		<?php $i++; ?> 
 		<?php endforeach; ?>
 			</table>
-		<a href="tambah.php" class="btn btn-dark" id="tambah-siswa">Tambah Siswa</a>
+		<a href="tambah.php" class="btn btn-dark mt-5" style="position : relative; left : 20px;">Tambah Siswa</a>
 	</section>
 			
 </div>
