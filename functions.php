@@ -62,6 +62,7 @@
 		$query = mysqli_query( $conn, "UPDATE data_siswa 
 										SET
 										NIS = '$nis',
+										nama = '$nama',
 										jenis_kelamin = '$jk',
 										kelas = '$kelas',
 										alamat = '$alamat'
